@@ -17,8 +17,10 @@ public class BitPermutationTest {
 		for(int i=0;i<N;i++) {
 			input[i]=sc.nextInt();
 		}
-		
+		long start = System.nanoTime();
 		permutation(0,0);
+		long end = System.nanoTime();
+		System.out.println(end-start);
 		
 	}
 	
@@ -27,7 +29,7 @@ public class BitPermutationTest {
 		
 		//기저조건(기본파트)
 		if(cnt==R) {
-			System.out.println(Arrays.toString(numbers));
+//			System.out.println(Arrays.toString(numbers));
 			return;
 		}
 		

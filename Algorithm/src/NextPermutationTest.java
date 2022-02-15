@@ -14,15 +14,18 @@ public class NextPermutationTest {
 		for(int i=0;i<N;i++) {
 			input[i] = sc.nextInt();
 		}
+		long start = System.nanoTime();
+		
 		
 		//1.오름차순 정렬
 		Arrays.sort(input);
 		
 		do {
 			//순열 출력
-			System.out.println(Arrays.toString(input));
+//			System.out.println(Arrays.toString(input));
 		}while(np());
-		
+		long end = System.nanoTime();
+		System.out.println(end-start);		
 	}
 
 	private static boolean np() {
